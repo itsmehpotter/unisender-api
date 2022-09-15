@@ -26,6 +26,6 @@ app.post('/',(req,res)=>{
 })
 
 
-app.listen('80',()=>{
+app.listen(proccess.env.PORT||'80',()=>{
     console.log('Server Runing')
 })
